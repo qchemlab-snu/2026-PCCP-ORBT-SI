@@ -41,6 +41,7 @@ mc_ci = mc_ci.state_average_([1/nroots for _ in range(nroots)])
 mc_ci.fcisolver.spin=0
 mc_ci.fix_spin_(ss=0)
 mo = addons.sort_mo(mc_ci,mf.mo_coeff,cas_list,1)
+mc_ci.mo_coeff=mo
 mc_ci.kernel()
 
 mc_scf = mcscf.CASSCF(mf, 3, 2)
@@ -48,6 +49,7 @@ mc_scf = mc_scf.state_average_([1/nroots for _ in range(nroots)])
 mc_scf.fcisolver.spin=0
 mc_scf.fix_spin_(ss=0)
 mo = addons.sort_mo(mc_scf,mf.mo_coeff,cas_list,1)
+mc_scf.mo_coeff=mo
 mc_scf.kernel()
 
 from pyscf.sfnoci.sfnoci import SFGNOCI

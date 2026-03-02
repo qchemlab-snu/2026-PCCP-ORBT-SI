@@ -1,8 +1,8 @@
 # 2026-PCCP-ORBT-SI
 
 ## Setup
-
-This repository requires **pyscf-forge** : https://github.com/pyscf/pyscf-forge
+This repository requires **pyscf** : https://github.com/pyscf/ (version : 2.11.0)
+This repository requires **pyscf-forge** : https://github.com/pyscf/pyscf-forge (for sfnoci)
 
 ## Installation Notes
 
